@@ -1,0 +1,58 @@
+{
+  "dependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-server": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@angular/ssr": "^20.0.1",
+    "@tailwindcss/postcss": "^4.1.8",
+    "express": "^5.1.0",
+    "postcss": "^8.5.4",
+    "rxjs": "~7.8.0",
+    "tailwindcss": "^4.1.8",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.0.1",
+    "@angular/cli": "^20.0.1",
+    "@angular/compiler-cli": "^20.0.0",
+    "@eslint/js": "^9.28.0",
+    "@types/express": "^5.0.1",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.15.30",
+    "eslint": "^9.28.0",
+    "jasmine-core": "~5.7.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "0.6.12",
+    "typescript": "~5.8.2",
+    "typescript-eslint": "^8.33.1"
+  },
+  "engines": {
+    "node": "22",
+    "npm": "10 || 11"
+  },
+  "name": "starter-angular-20",
+  "private": true,
+  "scripts": {
+    "build": "ng build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "ng": "ng",
+    "serve:ssr:starter-angular-20": "node dist/starter-angular-20/server/server.mjs",
+    "start": "ng serve",
+    "test": "ng test",
+    "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+    "watch": "ng build --watch --configuration development"
+  },
+  "type": "module"
+}
