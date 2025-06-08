@@ -3,16 +3,15 @@ import { Link } from "@/app/component/link";
 import { NgOptimizedImage } from "@angular/common";
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
-const host = {
-  class:
-    "block bg-white w-full max-w-85 rounded-lg overflow-clip shadow-[0_1px_3px_rgba(0,0,0,0.10),0_1px_2px_rgba(0,0,0,0.06)]",
-};
-
 @Component({
   selector: "app-blog-card",
   imports: [NgOptimizedImage, Badge, Link],
   templateUrl: "./blog-card.ng.html",
-  host,
+  styles: `
+    :host {
+      display: block;
+    }
+  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlogCard {
