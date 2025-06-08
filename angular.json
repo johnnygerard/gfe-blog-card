@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "starter-angular-20": {
+    "gfe-blog-card": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -88,10 +88,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "starter-angular-20:build:production"
+              "buildTarget": "gfe-blog-card:build:production"
             },
             "development": {
-              "buildTarget": "starter-angular-20:build:development"
+              "buildTarget": "gfe-blog-card:build:development"
             }
           },
           "defaultConfiguration": "development"
