@@ -1,5 +1,6 @@
 import { GlobalErrorHandler } from "@/app/global-error-handler";
 import { AppTitleStrategy } from "@/app/service/app-title-strategy";
+import { provideImageKitLoader } from "@angular/common";
 import {
   ApplicationConfig,
   ErrorHandler,
@@ -27,5 +28,6 @@ export const appConfig: ApplicationConfig = {
       provide: TitleStrategy,
       useClass: AppTitleStrategy,
     },
+    provideImageKitLoader("https://ik.imagekit.io/jgerard/gfe-blog-card"),
   ],
 };
