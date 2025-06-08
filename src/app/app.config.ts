@@ -1,4 +1,5 @@
 import { GlobalErrorHandler } from "@/app/global-error-handler";
+import { AppTitleStrategy } from "@/app/service/app-title-strategy";
 import {
   ApplicationConfig,
   ErrorHandler,
@@ -9,7 +10,7 @@ import {
   provideClientHydration,
   withEventReplay,
 } from "@angular/platform-browser";
-import { provideRouter } from "@angular/router";
+import { provideRouter, TitleStrategy } from "@angular/router";
 import { routes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
@@ -21,6 +22,10 @@ export const appConfig: ApplicationConfig = {
     {
       provide: ErrorHandler,
       useClass: GlobalErrorHandler,
+    },
+    {
+      provide: TitleStrategy,
+      useClass: AppTitleStrategy,
     },
   ],
 };
