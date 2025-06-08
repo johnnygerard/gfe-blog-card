@@ -5,7 +5,11 @@ import { RouterLink } from "@angular/router";
   selector: "app-not-found",
   imports: [RouterLink],
   templateUrl: "./not-found.ng.html",
-  host: { class: "block" },
+  styles: `
+    :host {
+      display: block;
+    }
+  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NotFound {}

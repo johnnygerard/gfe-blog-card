@@ -5,7 +5,11 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
   selector: "app-home",
   imports: [BlogCard],
   templateUrl: "./home.ng.html",
-  host: { class: "block" },
+  styles: `
+    :host {
+      display: block;
+    }
+  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {}
