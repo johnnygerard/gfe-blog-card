@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* Canvas background linear gradient */
+  --canvas: 148deg, #f9fafb 8.89%, #d2d6db 100.48%;
+
   --font-sans: "Noto Sans", sans-serif;
   --font-sans--font-variation-settings: "wdth" 100;
 }
