@@ -1,16 +1,17 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
     "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "starter-angular-20": {
+    "gfe-blog-card": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "changeDetection": "OnPush",
+          "displayBlock": true,
           "inlineStyle": true,
           "ngHtml": true,
           "skipTests": true
@@ -88,10 +89,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "starter-angular-20:build:production"
+              "buildTarget": "gfe-blog-card:build:production"
             },
             "development": {
-              "buildTarget": "starter-angular-20:build:development"
+              "buildTarget": "gfe-blog-card:build:development"
             }
           },
           "defaultConfiguration": "development"
