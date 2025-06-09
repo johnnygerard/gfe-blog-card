@@ -1,9 +1,9 @@
+import { Link } from "@/app/component/link";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { RouterLink } from "@angular/router";
 
 @Component({
   selector: "app-not-found",
-  imports: [RouterLink],
+  imports: [Link],
   templateUrl: "./not-found.ng.html",
   styles: `
     :host {
@@ -13,3 +13,5 @@ import { RouterLink } from "@angular/router";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NotFound {}
+
+
